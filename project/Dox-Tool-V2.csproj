@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{B3D64029-08F9-409B-AD2B-97A57DEBD72B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>Dox Tool V2</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Microsoft.VisualBasic">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\Microsoft.VisualBasic\v4.0_10.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dox_Tool_V2.My.Resources\Resources.cs" />
+    <Compile Include="Dox_Tool_V2.My\MyApplication.cs" />
+    <Compile Include="Dox_Tool_V2.My\MyComputer.cs" />
+    <Compile Include="Dox_Tool_V2.My\MyProject.cs" />
+    <Compile Include="Dox_Tool_V2.My\MySettings.cs" />
+    <Compile Include="Dox_Tool_V2.My\MySettingsProperty.cs" />
+    <Compile Include="Dox_Tool_V2\DrawHelpers.cs" />
+    <Compile Include="Dox_Tool_V2\EmailSearch.cs" />
+    <Compile Include="Dox_Tool_V2\Form1.cs" />
+    <Compile Include="Dox_Tool_V2\Functions.cs" />
+    <Compile Include="Dox_Tool_V2\LogInButton.cs" />
+    <Compile Include="Dox_Tool_V2\LogInButtonWithProgress.cs" />
+    <Compile Include="Dox_Tool_V2\LogInCheckBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInColourTable.cs" />
+    <Compile Include="Dox_Tool_V2\LogInComboBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInContextMenu.cs" />
+    <Compile Include="Dox_Tool_V2\LogInGroupBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInHorizontalScrollBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInLabel.cs" />
+    <Compile Include="Dox_Tool_V2\LogInListBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInListBoxWBuiltInScrollBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInLogButton.cs" />
+    <Compile Include="Dox_Tool_V2\LogInNormalTextBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInNumeric.cs" />
+    <Compile Include="Dox_Tool_V2\LogInOnOffSwitch.cs" />
+    <Compile Include="Dox_Tool_V2\LogInPassTextBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInProgressBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInRadialProgressBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInRadioButton.cs" />
+    <Compile Include="Dox_Tool_V2\LogInRichTextBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInSeperator.cs" />
+    <Compile Include="Dox_Tool_V2\LogInStatusBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInTabControl.cs" />
+    <Compile Include="Dox_Tool_V2\LogInThemeContainer.cs" />
+    <Compile Include="Dox_Tool_V2\LogInTitledListBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInTitledListBoxWBuiltInScrollBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInTrackBar.cs" />
+    <Compile Include="Dox_Tool_V2\LogInUserTextBox.cs" />
+    <Compile Include="Dox_Tool_V2\LogInVerticalScrollBar.cs" />
+    <Compile Include="Dox_Tool_V2\NameSearch.cs" />
+    <Compile Include="Dox_Tool_V2\Updater.cs" />
+    <Compile Include="Dox_Tool_V2\UsernameSearch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dox_Tool_V2\Form1.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
